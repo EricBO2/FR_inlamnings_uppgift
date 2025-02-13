@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { TextBoxComponent } from "../text-box/text-box.component";
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [TextBoxComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
