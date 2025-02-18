@@ -9,24 +9,17 @@ import { CustomButtonComponent } from '../custom-button/custom-button.component'
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  
-  
-  
-  
   count: number=0;
   
   add(){
-    this.count=addToNumber(this.count)
+    this.count=addNumber(this.count,1)
   }
   subtract(){
-    this.count=subtractToNumber(this.count)
+    this.count=addNumber(this.count, -1)
   }
-
 }
 
-function addToNumber(count:number):number{
-  return count+1;
-}
-function subtractToNumber(count:number):number{
-  return count-1;
+
+function addNumber(num1:number, num2:number):number{
+  return num1+num2;
 }
