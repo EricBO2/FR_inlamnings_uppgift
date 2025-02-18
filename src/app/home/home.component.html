@@ -1,6 +1,22 @@
 <main>
+  <div class="bock_element">
     <div class="rubrik_box">
-        <h1>välkommen!</h1>
+      <h1>Välkommen!</h1>
     </div>
-    <app-text-box textBoxMessage="hej välkommen"></app-text-box>
+    <app-text-box
+      textBoxMessage="Hej välkommen till min hemsida den har jag skaped för att öva på front end och ramvärk"
+    ></app-text-box>
+    <div>
+      <app-custom-button (clicked)="add()"  buttonMessage="+1"/>
+      
+      <app-custom-button (clicked)="subtract()"  buttonMessage="-1"/>
+
+      <p>{{count}}</p>
+
+      
+    </div>
+
+  </div>
+
+
 </main>
