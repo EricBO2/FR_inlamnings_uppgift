@@ -1,22 +1,17 @@
 <main>
-  <div class="bock_element">
-    <div class="rubrik_box">
-      <h1>Välkommen!</h1>
-    </div>
-    <app-text-box
-      textBoxMessage="Hej välkommen till min hemsida den har jag skaped för att öva på front end och ramvärk"
-    ></app-text-box>
-    <div>
-      <app-custom-button (clicked)="add()"  buttonMessage="+1"/>
-      
-      <app-custom-button (clicked)="subtract()"  buttonMessage="-1"/>
+  <div class="rubrik_box">
+    <h1>Välkommen!</h1>
+  </div>
+  <div class="text_box">
+    "Hej välkommen till min hemsida den har jag skaped för att öva på front end
+    och ramvärk"
+  </div>
+  <div class="text_box">
+    <p>{{ count }}</p>
+    
+    <app-custom-button (clicked)="add()" buttonMessage="+1" />
 
-      <p>{{count}}</p>
-
-      
-    </div>
+    <app-custom-button (clicked)="subtract()" buttonMessage="-1" />
 
   </div>
-
-
 </main>

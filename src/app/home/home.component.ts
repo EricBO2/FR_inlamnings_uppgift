@@ -1,16 +1,18 @@
 import { Component } from '@angular/core';
-import { TextBoxComponent } from '../text-box/text-box.component';
 import { CustomButtonComponent } from '../custom-button/custom-button.component';
-import { AboutComponent } from '../about/about.component';
-import { generate } from 'rxjs';
+
 
 @Component({
   selector: 'app-home',
-  imports: [TextBoxComponent, CustomButtonComponent],
+  imports: [CustomButtonComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
+  
+  
+  
+  
   count: number=0;
   
   add(){

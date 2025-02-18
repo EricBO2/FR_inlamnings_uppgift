@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.rubrik_box {
+  display: flex;
+  background-color: royalblue;
+  width: 50%;
+  font-size: 24px;
+  border: 10px solid;
+  border-color: rgb(15, 82, 99);
+  justify-content: center;
+}
+.text_box {
+  display: flex;
+  background-color: aquamarine;
+  width: auto;
+  min-width: 25%;
+  max-width: 50%;
+  min-height: 20px;
+  font-size: 30px;
+  border: 10px solid;
+  border-color: rgb(15, 82, 99);
+  justify-content: center;
+}
